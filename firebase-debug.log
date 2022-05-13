@@ -1,0 +1,115 @@
+[debug] [2022-05-13T00:12:57.514Z] ----------------------------------------------------------------------
+[debug] [2022-05-13T00:12:57.515Z] Command:       /home/gitpod/.nvm/versions/node/v16.14.2/bin/node /home/gitpod/.nvm/versions/node/v16.14.2/bin/firebase init
+[debug] [2022-05-13T00:12:57.516Z] CLI Version:   10.9.2
+[debug] [2022-05-13T00:12:57.516Z] Platform:      linux
+[debug] [2022-05-13T00:12:57.516Z] Node Version:  v16.14.2
+[debug] [2022-05-13T00:12:57.516Z] Time:          Fri May 13 2022 00:12:57 GMT+0000 (Coordinated Universal Time)
+[debug] [2022-05-13T00:12:57.516Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-13T00:12:57.520Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-13T00:12:57.521Z] > authorizing via signed-in user (giovanniandr97@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /workspace/mapbox-clustering
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-05-13T00:13:14.997Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-05-13T00:13:14.997Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-13T00:13:15.051Z] <<< HTTP RESPONSE 200 {"date":"Fri, 13 May 2022 00:13:15 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-13T00:13:15.094Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"dashboardhomely","name":"dashboardhomely"}
+[debug] [2022-05-13T00:13:15.816Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 13 May 2022 00:13:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=703","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-13T00:13:15.818Z] > refreshing access token with scopes: []
+[debug] [2022-05-13T00:13:15.818Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-13T00:13:15.850Z] <<< HTTP RESPONSE 200 {"date":"Fri, 13 May 2022 00:13:15 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-13T00:13:15.895Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6221993122002822267 [none]
+[debug] [2022-05-13T00:13:16.642Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6221993122002822267 200
+[debug] [2022-05-13T00:13:16.642Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6221993122002822267 {"name":"operations/cp.6221993122002822267"}
+[debug] [2022-05-13T00:13:17.143Z] [Project Creation Poller] Retrying task index 0
+[debug] [2022-05-13T00:13:17.143Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6221993122002822267 [none]
+[debug] [2022-05-13T00:13:17.906Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6221993122002822267 200
+[debug] [2022-05-13T00:13:17.906Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6221993122002822267 {"name":"operations/cp.6221993122002822267","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2022-05-13T00:13:18.907Z] [Project Creation Poller] Retrying task index 0
+[debug] [2022-05-13T00:13:18.907Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6221993122002822267 [none]
+[debug] [2022-05-13T00:13:19.608Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6221993122002822267 200
+[debug] [2022-05-13T00:13:19.608Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6221993122002822267 {"name":"operations/cp.6221993122002822267","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"1084636142539","projectId":"dashboardhomely","lifecycleState":"ACTIVE","name":"dashboardhomely","createTime":"2022-05-13T00:13:15.700Z"}}
+[debug] [2022-05-13T00:13:19.609Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-05-13T00:13:19.609Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-13T00:13:19.641Z] <<< HTTP RESPONSE 200 {"date":"Fri, 13 May 2022 00:13:19 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-13T00:13:19.683Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/dashboardhomely:addFirebase  
+ 
+[debug] [2022-05-13T00:13:22.491Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 13 May 2022 00:13:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-13T00:13:22.492Z] > refreshing access token with scopes: []
+[debug] [2022-05-13T00:13:22.492Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-13T00:13:22.528Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 13 May 2022 00:13:22 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-13T00:13:22.579Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 [none]
+[debug] [2022-05-13T00:13:23.346Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 200
+[debug] [2022-05-13T00:13:23.346Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 {"name":"operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4"}
+[debug] [2022-05-13T00:13:23.846Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-05-13T00:13:23.847Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 [none]
+[debug] [2022-05-13T00:13:24.514Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 200
+[debug] [2022-05-13T00:13:24.514Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 {"name":"operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4"}
+[debug] [2022-05-13T00:13:25.515Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-05-13T00:13:25.515Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 [none]
+[debug] [2022-05-13T00:13:26.141Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 200
+[debug] [2022-05-13T00:13:26.141Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 {"name":"operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4"}
+[debug] [2022-05-13T00:13:28.141Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-05-13T00:13:28.142Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 [none]
+[debug] [2022-05-13T00:13:28.598Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 200
+[debug] [2022-05-13T00:13:28.598Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 {"name":"operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4"}
+[debug] [2022-05-13T00:13:32.598Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-05-13T00:13:32.599Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 [none]
+[debug] [2022-05-13T00:13:33.243Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 200
+[debug] [2022-05-13T00:13:33.243Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4 {"name":"operations/workflows/ZGJiYWQ5NWEtZGFiNC00NGM4LTlkMTktYzdhMjYwZGM1ZjE4","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"dashboardhomely","projectNumber":"1084636142539","displayName":"dashboardhomely","name":"projects/dashboardhomely","resources":{"hostingSite":"dashboardhomely"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: dashboardhomely
+[info]    - Project Name: dashboardhomely
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/dashboardhomely/overview
+[info] i  Using project dashboardhomely (dashboardhomely) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote public/404.html 
+[debug] [2022-05-13T00:14:08.040Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-05-13T00:14:08.053Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-05-13T00:14:08.054Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.8.1","browserURL":"https://www.gstatic.com/firebasejs/9.8.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.8.1/firebase.tgz"},"live":{"version":"9.8","browserURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.8.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.8.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.8.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.8.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.8.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.8.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.8.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at /workspace/mapbox-clustering 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=82261713&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
